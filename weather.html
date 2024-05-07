@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+    <link rel="stylesheet" href="weather.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="img-fluid">
+    
+       <div id="content">
+
+        <div id="search">
+
+                <nav class="navbar navbar-dark bg-transparent">
+                <form class="form-inline">
+                  <i class="fas fa-search"></i>
+                  <input  id = "search_inp"class="form-control mr-sm-2" type="search" placeholder="Search your City" aria-label="Search">
+                  <!-- <button id = "search_btn" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+                </form>
+              </nav>
+
+        </div>
+
+        <div id="info">
+            <h1 class="location"></h1>
+            <h3 class="time"> </h3>
+            <button id = "search_btn" class="btn btn-outline-dark my-2 my-sm-0" type="submit">Clouds</button>
+            <div id="logo"></div>
+            <div id="temp"></div>
+            <div id="w_min_max">
+              <p id="w_min"></p>
+              <p id="w_max"></p>
+            </div>
+
+        </div>
+
+        
+        <div id="footerinfo">
+            <div class="row justify-content-around">
+                <div class="col-4">
+                 <h3>Feels Like</h3>
+                 <i class="fa-solid fa-droplet fa-2xl" style="color: #999da3;"></i>
+                 <p class="feelsLike">15&#176</p>
+                </div>
+                <div class="col-4">
+                  <h3>Humidity</h3>
+                  <i class="fa-solid fa-hot-tub-person fa-2xl" style="color: #b6b9be;"></i>
+                  <p class="Humid">15&#176</p>
+                </div>
+              
+                <div class="col-4">
+                  <h3>Wind</h3>
+                  <i class="fa-solid fa-wind fa-2xl" style="color: #a5a9b1;"></i>
+                 <p class="Wind">15&#176</p>
+                </div>
+                <div class="col-4">
+                  <h3>Pressure</h3>
+                  <i class="fa-solid fa-gauge fa-2xl" style="color: #b3b3b3;"></i>
+                 <p class="Pressure">15&#176</p>
+                </div>
+              </div>
+        </div>
+
+        
+    
+        
+       </div> 
+    
+    
+</body>
+<script src="weather.js">
+
+</script>
+</html>
